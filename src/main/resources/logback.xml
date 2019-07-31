@@ -1,0 +1,15 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%n%white(%-37thread) %highlight(%-5level) %cyan(%-35logger{35}) %-98message%xException{15}%white(%marker)</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ASYNCSTDOUT" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="STDOUT" />
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="ASYNCSTDOUT" />
+    </root>
+</configuration>
