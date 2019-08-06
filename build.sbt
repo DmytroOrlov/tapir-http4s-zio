@@ -29,7 +29,6 @@ lazy val `tapir-http4s-zio` = (project in file("."))
       "dev.zio" %% "zio-interop-cats" % Versions.zioCats,
       "org.http4s" %% "http4s-dsl" % Versions.http4s,
       "org.http4s" %% "http4s-blaze-server" % Versions.http4s,
-      "org.http4s" %% "http4s-circe" % Versions.http4s,
       "com.softwaremill.tapir" %% "tapir-http4s-server" % Versions.tapir,
       "com.softwaremill.tapir" %% "tapir-openapi-circe-yaml" % Versions.tapir,
       "com.softwaremill.tapir" %% "tapir-openapi-docs" % Versions.tapir,
